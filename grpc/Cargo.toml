@@ -1,0 +1,19 @@
+[package]
+name = "grpc"
+version.workspace = true
+edition.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+tokio = { workspace = true, features = ["full"] }
+hyper = { workspace = true, features = ["full"] }
+prost = {workspace = true}
+tonic = {workspace = true}
+tonic-reflection = {workspace = true}
+tower = { workspace = true, features = ["full"] }
+
+openssl-sys = {workspace = true}
+openssl = { workspace = true, features = ["vendored"] }

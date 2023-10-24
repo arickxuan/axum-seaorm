@@ -1,0 +1,10 @@
+/target
+*/target/*
+.idea
+.vscode
+.fleet
+/static/*
+.env
+*/Cargo.lock
+Cargo.lock
+*/config.toml

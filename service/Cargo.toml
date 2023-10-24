@@ -1,0 +1,18 @@
+[package]
+name  = "service"
+version.workspace = true
+edition.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+common = {path = "../common"}
+
+axum = {workspace = true ,features = ["headers"]}
+sea-orm = {workspace = true,features = ["macros", "runtime-async-std","with-chrono"]}
+anyhow = "1.0.75"
+
+scru128 = {workspace = true}
+
+openssl-sys = {workspace = true}
+openssl = { workspace = true, features = ["vendored"] }
